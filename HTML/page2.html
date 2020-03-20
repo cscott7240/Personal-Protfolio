@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html >
+<head>
+    
+<title>Chad Scott</title>
+    
+<link rel="stylesheet" type="text/css" href="../style/style.css">
+    
+    
+</head>
+    
+    
+<body>
+    
+<div class="background"></div>
+    
+<div class="nav">
+    
+    <a class="a" href="/link/to/page1">HOME</a>
+    <a class="b" href="page2.html">ABOUT</a> 
+    <a class="c" href="#">GALLERY</a>
+    <a class="d" href="#">CONTACT ME</a> 
+   
+    
+
+</div>
+    
+    <div class="content">
+    
+    <div id="page1" class="home">
+        <h1>I am Chad Scott</h1>
+        <h3>The man, the myth, the legend</h3>
+            </div> 
+
+        
+    <div id="page2" class="about" style="display: none">
+        
+        <p>
+        Hello, friends, <br>
+        I am chad, I am awesome. could you use a little more awwesome in your life?
+        </p>
+    
+    </div>
+</div>
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+   $(document).ready(function(){
+       
+       $('#menu a').click(function(e){
+           hideContentDivs();
+           var tmp_div=$(this).parent().index();
+           console.log(tmp_div)
+           $('content div').eq(tmp_div).show();
+       });
+       
+       function hideContentDivs(){
+           $('content div') .each(function(){
+               $(this).hide();
+           });
+       }
+       hideContentDivs();
+   
+    
+    
+  </script>
+   
+        
+</body>
+    
+</html>
