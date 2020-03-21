@@ -121,6 +121,13 @@ a.active, .nav a:hover{
     
 }
 
+p{
+    font-size: 20px;
+    font-family: fantasy;
+    position: absolute;
+    padding-left: 200px;
+}
+
 
 
 
